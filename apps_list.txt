@@ -1,0 +1,79 @@
+СПИСОК ПРИЛОЖЕНИЙ ДЛЯ ТЕСТИРОВАНИЯ РЕКЛАМЫ
+==========================================
+
+1. Геометрический Прыжок
+   Package: ru.arcadegames.geometryjump
+   Rewarded: R-M-18197251-1
+   Interstitial: R-M-18197251-2
+   Config: app_config_1.json
+
+2. Цветовой Шторм
+   Package: ru.casualgames.colorstorm
+   Rewarded: R-M-18197250-1
+   Interstitial: R-M-18197250-2
+   Config: app_config_2.json
+
+3. Стрелок по Шарам
+   Package: ru.puzzlegames.bubbleblast
+   Rewarded: R-M-18197249-1
+   Interstitial: R-M-18197249-2
+   Config: app_config_3.json
+
+4. Тренажер Памяти
+   Package: ru.braingames.memorytrainer
+   Rewarded: R-M-18197239-1
+   Interstitial: R-M-18197239-2
+   Config: app_config_4.json
+
+5. Башня Кубиков
+   Package: ru.casualgames.cubetower
+   Rewarded: R-M-18197238-1
+   Interstitial: R-M-18197238-2
+   Config: app_config_5.json
+
+6. Неоновый Флиппер
+   Package: ru.arcadegames.neonflipper
+   Rewarded: R-M-18197237-1
+   Interstitial: R-M-18197237-2
+   Config: app_config_6.json
+
+7. Поиск Слов Про
+   Package: ru.wordgames.wordhuntpro
+   Rewarded: R-M-18197234-1
+   Interstitial: R-M-18197234-2
+   Config: app_config_7.json
+
+8. Точный Бросок
+   Package: ru.sportgames.perfectdunk
+   Rewarded: R-M-18197215-1
+   Interstitial: R-M-18197215-2
+   Config: app_config_8.json
+
+9. Судоку Мастер
+   Package: ru.logicgames.sudokumaster
+   Rewarded: R-M-18197198-1
+   Interstitial: R-M-18197198-2
+   Config: app_config_9.json
+
+10. Фруктовое Слияние
+    Package: ru.puzzlegames.fruitfusion
+    Rewarded: R-M-18197197-1
+    Interstitial: R-M-18197197-2
+    Config: app_config_10.json
+
+==========================================
+СБОРКА APK:
+
+Для сборки одного APK:
+  copy app_config_1.json app_config.json
+  python rebuild_app.py
+
+Для сборки всех APK:
+  python mass_build.py
+
+Все APK будут подписаны одним keystore: neonsnake-release.keystore
+
+
+
+
+

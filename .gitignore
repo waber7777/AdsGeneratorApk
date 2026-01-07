@@ -1,0 +1,44 @@
+# Node
+node_modules/
+dist/
+package-lock.json
+
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/capacitor-cordova-android-plugins/build/
+
+# Keystore (не публиковать!)
+*.keystore
+
+# Токены (не публиковать!)
+yandex_token.txt
+
+# APK файлы
+*.apk
+
+# Временные файлы
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Локальные конфиги
+app_config.json
+
+# Экспорт данных
+apps_export.json
+partner_data*.json
+apps_info.json
+
+# Тестовые APK
+РоманКрылов/
+
