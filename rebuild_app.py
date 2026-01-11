@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Скрипт для автоматического переименования приложения и сборки APK
-Использование: python rebuild_app.py
+Использование: python rebuild_app.py [config_file.json]
 """
 
 import json
@@ -10,6 +10,7 @@ import os
 import shutil
 import subprocess
 import re
+import sys
 from pathlib import Path
 
 # Цвета для вывода
@@ -32,12 +33,16 @@ def print_error(message):
 def print_warning(message):
     print(f"{Colors.YELLOW}⚠ {message}{Colors.END}")
 
-def load_config():
-    """Загружает конфигурацию из app_config.json"""
-    config_path = Path("app_config.json")
+def load_config(config_file=None):
+    """Загружает конфигурацию из указанного файла или app_config.json"""
+    if config_file is None:
+        config_path = Path("app_config.json")
+    else:
+        config_path = Path(config_file)
+    
     if not config_path.exists():
-        print_error("Файл app_config.json не найден!")
-        print("Создайте файл app_config.json с нужными параметрами.")
+        print_error(f"Файл {config_path} не найден!")
+        print("Создайте файл с нужными параметрами.")
         exit(1)
     
     with open(config_path, 'r', encoding='utf-8') as f:
@@ -454,8 +459,11 @@ def main():
     print("  АВТОМАТИЧЕСКАЯ ПЕРЕСБОРКА ПРИЛОЖЕНИЯ")
     print(f"{'='*60}{Colors.END}\n")
     
+    # Получаем имя конфиг-файла из аргументов командной строки
+    config_file = sys.argv[1] if len(sys.argv) > 1 else None
+    
     # Загружаем конфигурацию
-    config = load_config()
+    config = load_config(config_file)
     print_success("Конфигурация загружена")
     print(f"  Название: {config['app_name']}")
     print(f"  Пакет: {config['package_name']}")

@@ -1,0 +1,13 @@
+{
+  "app_name": "Неоновый змей",
+  "package_name": "com.neonsnake.game",
+  "version_code": 1,
+  "version_name": "1.0",
+  "rewarded_ad_unit_id": "R-M-17963472-2",
+  "interstitial_ad_unit_id": "R-M-17963472-1",
+  "keystore_name": "neonsnake-release.keystore",
+  "key_alias": "neonsnake",
+  "keystore_password": "neonsnake123",
+  "key_password": "neonsnake123"
+}
+
