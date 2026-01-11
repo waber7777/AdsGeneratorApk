@@ -1,0 +1,13 @@
+{
+  "app_name": "Слияние 2048",
+  "package_name": "ru.puzzlegames.merge2048",
+  "version_code": 1,
+  "version_name": "1.0",
+  "rewarded_ad_unit_id": "R-M-18411384-1",
+  "interstitial_ad_unit_id": "R-M-18411384-2",
+  "keystore_name": "neonsnake-release.keystore",
+  "key_alias": "neonsnake",
+  "keystore_password": "neonsnake123",
+  "key_password": "neonsnake123"
+}
+

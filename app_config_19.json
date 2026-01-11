@@ -1,0 +1,13 @@
+{
+  "app_name": "Попади в цель",
+  "package_name": "ru.nicegames.targethit",
+  "version_code": 1,
+  "version_name": "1.0",
+  "rewarded_ad_unit_id": "R-M-18411318-1",
+  "interstitial_ad_unit_id": "R-M-18411318-2",
+  "keystore_name": "neonsnake-release.keystore",
+  "key_alias": "neonsnake",
+  "keystore_password": "neonsnake123",
+  "key_password": "neonsnake123"
+}
+

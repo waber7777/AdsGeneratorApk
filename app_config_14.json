@@ -1,0 +1,13 @@
+{
+  "app_name": "Змейка",
+  "package_name": "ru.nicegames.snake",
+  "version_code": 1,
+  "version_name": "1.0",
+  "rewarded_ad_unit_id": "R-M-18411314-1",
+  "interstitial_ad_unit_id": "R-M-18411314-2",
+  "keystore_name": "neonsnake-release.keystore",
+  "key_alias": "neonsnake",
+  "keystore_password": "neonsnake123",
+  "key_password": "neonsnake123"
+}
+
